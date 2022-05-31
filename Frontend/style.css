@@ -1,0 +1,144 @@
+/* layout */
+
+.content {
+    max-width: 950px;
+    margin: 5px auto 10px auto;
+    padding: 10px 25px 25px 25px;
+    background-color: rgb(234, 234, 246);
+}
+
+.container {
+    display: flex;
+    
+}
+.row { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ulbox {
+    align-items: baseline;
+    padding: 5px 10px 10px 10px;
+    margin-top: 10px;
+}
+
+.footer {
+    justify-content: center;
+}
+
+#skillsbox {
+    justify-content: center;
+}
+
+#skillmiddle {
+    margin: 0px 45px 5px 45px;
+}
+
+#millist {
+    margin: auto 65px auto auto;
+}
+
+#badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    background-color: rgb(200, 211, 236);
+    font-size:medium;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#counter {
+    color: rgb(172, 8, 90);
+}
+    
+
+/* content styling */
+
+body {
+    margin: 25px auto auto auto;
+    font-family: 'Roboto Slab', Georgia, serif;
+}
+
+.box-shadow{
+  box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size:large;
+}
+
+
+h3,h4,h5 { 
+    margin: 15px 0px 5px 0px;
+}
+
+p {
+    margin: 5px auto 5px auto;
+}
+
+hr {
+    color: rgb(200, 211, 236);
+}
+
+ul {
+    list-style:circle;
+    margin: 0px auto 5px auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a:link {
+    color: darkblue
+}
+a:active {
+    color: white; 
+}
+
+a:visited { 
+    color: rgb(119, 4, 168);
+}
+
+footer {
+    font-size: small;
+}
+
+/* mobile */
+@media only screen and (max-width:900px) {
+    .row {
+        flex-direction: column;
+    }
+    .notopbot {
+        margin: 0px auto 0px auto;       
+    }
+    .nobot {
+        margin: auto auto 0px auto;
+    }
+    #skillmiddle {
+        margin: auto;
+    }
+    #millist {
+        margin: auto 20px auto auto;
+    }
+    h4 {
+        margin: 15px auto 3px auto;
+    }
+    
+    h5 {
+        margin: 0px auto 0px auto;
+    }
+      
+}

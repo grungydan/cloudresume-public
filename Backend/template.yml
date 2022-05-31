@@ -1,0 +1,47 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Description: builds backend for resume.somedaniel.com
+
+Globals:
+  Api:
+    Cors:
+      AllowOrigin: "'*'"
+      AllowMethods: "'GET'"
+
+Resources:
+  cloudResFunction:  
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: set up lambda function for visit counter
+      CodeUri: Lambda/
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Environment:
+        Variables:
+          table : !Ref ddbTable
+      Policies: 
+        - DynamoDBCrudPolicy:
+            TableName: !Ref ddbTable
+      Events: 
+        VisitorCounter:
+          Type: Api
+          Properties:
+            Method: get
+            Path: /visitors
+            
+
+     
+  ddbTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties: 
+      PrimaryKey:
+        Name: id
+        Type: String
+      Tags: 
+        project: cloudres
+
+Outputs:
+  cloudResApi:
+    Description: "API Gateway endpoint URL for Prod stage of Cloud Res visitor count function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/visitors"

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/resume.js"></script>
+    <title>Daniel Henson Resume</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<div class="content box-shadow">
+
+    <!-- header chonk  -->
+    <header>
+    <div class="row">
+        <!-- name blurb -->
+        <div>
+            <h1>Daniel Henson</h1> 
+            <h2>From Soldier to Respiratory Therapist to Cloud Professional</h2>
+        </div>
+
+        <!-- badges -->
+        <div id="badges">
+            <a href="https://www.credly.com/badges/e205bd64-a64f-41f8-8fdd-72dfcb3f7e40/public_url" target="_blank" rel="noopener noreferrer" title="Certified Kubernetes Admnistrator Badge"><img src="images/ckasm.png" style="width:85px;height:85px"></a>
+            <a href="https://www.credly.com/badges/eac8cd38-b018-488c-8a1f-3b46e05011fc/public_url" target="_blank" rel="noopener noreferrer" title="AWS Certified Cloud Practitioner Badge"><img src="images/ccpsm.png" style="width:85px;height:85px"></a>            
+            <a href="https://www.credly.com/badges/36dbdb66-847b-4573-aca7-b4bfc77c442e/public_url" target="_blank" rel="noopener noreferrer" title="LFS201 Essentials of Linux System Administration Course Badge"><img src="images/lfs201sm.png" style="width:85px;height:85px"></a>
+        </div>    
+    </div>
+    </header>
+
+    <div class="row" id="contact">
+        
+        <!-- contact -->
+            <p><a href="mailto:daniel@somedaniel.com">daniel@somedaniel.com</a></p>
+            <p>+1 (828) 702-8815</p>
+            <p>Asheville, NC</p>
+            <p><a href = "https://www.linkedin.com/in/dlhenson/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn.</a></p>
+            <p><a href = "https://dlhcloudres.s3.amazonaws.com/Daniel_Henson_cloudresume_5-11-22.pdf" target="_blank" rel="noopener noreferrer">Download my resume.</a></p>
+            
+       
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <p class="quoteme">After a period of service in the U.S. Army as a cryptographic linguist, I moved into the world of clinical health care and spent the last eight years working with multi-disciplinary health care teams around the country to provide the best possible health outcomes for our patients, particularly during the Covid-19 crisis. While I enjoyed the work and the service to my patients, the challenges of that field and the desire for a better work/life balance finally collided with the urging of several friends in tech to lead me to what I should have been doing all along. Having been a life-long tech enthusiast and “the guy that knows about computers,” I am seeking to put my knowledge and experiences toward helping teams create great products and user experiences as I continue to learn and grow. </p>
+    </div>
+
+    <!-- certs -->
+    <hr>
+
+    <div class="row">
+        <h3>Certifications & Lincensure</h3>
+    </div>
+
+    <div class="row">
+        <div>
+            <h4>Cloud</h4>
+        </div>     
+        <div class="ulbox">         
+            <ul>
+                <li><abbr title="The Linux Foundation">LF</abbr> Certified Kubernetes Administrator</li>
+                <li><abbr title="Amazon Web Services">AWS</abbr> Certified Cloud Practitioner</li>
+                <li>AWS Solutions Architect Associate - <i>In Progress</i></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4>Healthcare</h4>
+        </div>
+        <div class="ulbox">
+            <ul>
+                <li>Registered Respiratory Therapist</li>
+                <li>Respiratory Care Practitioner in NC, WI*, WY*, & GA (*inactive)</li>
+                <li><abbr title="Basic Life Support (CPR)">BLS</abbr>, <abbr title="Advanced Cardiac Life Support">ACLS</abbr>, <abbr title="Pediatric Advanced Life Support">PALS</abbr>, & <abbr title="Neonatal Resuscitation Program">NRP</abbr> maintained during active practice.</li>
+            </ul>
+        </div>      
+    </div>     
+        
+    <hr>
+    <!-- skills -->
+    <div class="row">
+        <div>
+            <h3>Core Competencies</h3>
+        </div>
+    </div>
+
+    <div class="row" id="skillsbox">
+        
+        <div>
+        <ul class="nobot">
+            <li>Kubernetes</li>
+            <li>AWS</li>
+            <li>Python</li>
+            <li>Bash</li>
+           
+            
+        </ul>
+        </div>
+        
+        <div>
+            <ul class="notopbot" id="skillmiddle">          
+                <li>Git</li>
+                <li>HTML/CSS</li>
+                <li>Leaderhip</li>
+                <li>Docker</li>
+            </ul>
+        </div>
+            
+        <div>
+            <ul class="notopbot">
+                <li>Helm</li>
+                <li>Respiratory Care</li>
+                <li>Conversant in Mandarin Chinese</li>
+            </ul>
+        </div>
+    </div>
+           
+    <hr>
+<!-- projects -->
+    <div>
+        <h3>Projects</h3>
+    </div>  
+
+    <div>
+        <h4>Cloud Resume Challenge</h4>
+        <p>Built a CI/CD pipeline to automate the deployment of my resume website. The site itself is hosted using AWS S3, Route53, and CloudFront, while the backend is powered by DynamoDB using AWS Lambda and API Gateway. Automation is achieved with a combination of GitHub Actions and AWS CodePipeline. </p>
+        <p>Check it out on <a href="https://github.com/grungydan/cloudresume-public" target="_blank" rel="noopener noreferrer" title="Cloud Resume Frontend Repo">Github</a>.</p>
+        <p>Read about <a href="https://cloudresumechallenge.dev">the original challenge</a>.</p>
+        </div> 
+        <h4>Self-hosted Foundry VTT</h4>
+        <p>Ser up a persistent <a href="https://foundryvtt.com">Foundry Virtual Tabletop</a> using PM2 for reliability/uptime and Amazon S3 for fast asset service to players. Placed behind DuckDNS to work around residential IP restrictions.</p>
+   
+
+<hr>
+
+    <!-- jobs -->
+    <div class="row">
+        <div>
+            <h3>Employment History</h3>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div>
+            <h4>Up/Re-skilling Sabbatical</h4>
+        </div>
+                
+        <div>
+            <h5>August 2021-present</h5>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div>            
+            <p>With some planning and the support of my amazing wife, I have been able to treat this career change as my full time job. In the last months, I have gone from the idea of transitioning into tech to obtaining my CKA and AWS CCP, all the while refreshing existing or adding new skills to my tool belt and working on projects. I am currently working toward my AWS Solutions Architect Associate certification.</p>   
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <h4>Travel Respiratory Therapist</h4> 
+        </div>
+
+        <div>
+            <h5>Medical Solutions, LLC</h5>
+        </div>
+        
+        <div>
+            <h5> January 2019 - July 2021</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <ul class="workList">
+                <li>Demonstrated ability to integrate into a new healthcare team every three to six months while maintaining high standards of patient care and excellent performance reviews.</li>
+                <li>Served as Charge Therapist of a COVID hospital campus for three months, responsible for management and assignment of staff and resources across seven units of varying patient acuity as well as coordinating efforts with the main hospital campus Respiratory department.</li>
+                <li>Worked as lead therapist in COVID ICU for 8 months.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <h4>Staff Respiratory Therapist</h4> 
+        </div>
+
+        <div>
+            <h5>Pardee Hospital</h5>
+        </div>
+
+        <div>
+            <h5>August 2013 - January 2019</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <ul>
+                <li>Provided respiratory care as part of the multi-disciplinary clinical care team to achieve optimum health outcomes. </li>
+                <li>Performed clinical patient assessments, collected and interpreted diagnostic lab values to guide care.</li>
+                <li>Acted as SME to non-pulmonary medical provider staff in absence of an on-duty pulmonologist.</li>
+                <li>Served as Charge Therapist, organizing and leading the efforts of the Respiratory Care Department team across the hospital.</li>
+                <li>Served as interim manager of Respiratory Care Department for a period of three months during a staffing shortage, coordinating the scheduling and efforts of 15+ FT, PT, and PRN staff.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <!-- army -->
+    <div>
+        <h3>Military Service Highlights</h3>
+        <h4>Cryptologic Linguist, Sergeant, United States Army, 2000-2006</h4>
+        <ul id="millist">
+            <li>Graduated with honors in Mandarin Chinese Language Studies from the <a href=https://www.dliflc.edu target="_blank" ref="noopener noreferrer">Defense Language Institute</a> in Monterey, CA.</li>
+            <li>Attended and graduated the Primary Leadership Development Course. <a href="https://rdl.train.army.mil/catalog-ws/view/100.ATSC/877324B8-F78E-4BBE-83C2-F51BE727AE37-1274313265919/pldc/prmod2.pdf" title="PLDC Manual ca.2001" target="_blank" ref="noopener noreferrer">See what that entailed here.</a></li>  
+            <li>Served as <a href="https://www.ncoworldwide.army.mil/NCO-Corps-History/Shared-Experiences/Team-Leader/" target="_blank" ref="noopener noreferrer" title="The Team Leader: Duties and Responsibilities">Team Leader</a> with responsibility for the mentorship and career counseling of five direct reports.</li>
+            <li>Provided translation and quality assurance services in the generation of military intelligence products for various high-level national consumers.</li>
+            <li>Served as a Battalion Command Language Program Manager, coordinating the training and testing of more than 40 soldier-linguists.</li>
+            <li>Awarded the <a href="https://www.military-ranks.org/decorations/joint-service-achievement-medal" target="_blank" ref="noopener noreferrer" title="Joint Service Achievement Medal Description">Joint Service Achievement Medal</a> for contributions to mission objectives and unit goals.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- school -->
+    <div>
+        <h3>Education</h3>
+    </div>
+    <div>
+        <h4>AAS in Respiratory Care</h4> 
+        <p>Southwestern Community College, Sylva, NC | May 2013</p>
+        <p>Graduated <i>summa cum laude</i>.</p>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="row footer"">
+            <p>Daniel Henson | <a href="mailto:daniel@somedaniel.com">daniel@somedaniel.com</a> | +1 (828) 702-8815 </p>
+        </div>
+        <div class="row footer" >
+            <p>You are <span title="I love that this project calls for a visitor counter. 1998 vibes! Geocities! AltaVista!">visitor number</span>: <span id="counter"></span></p>
+        </div>        
+    </footer>
+
+</div>
+</body>
+</html>
