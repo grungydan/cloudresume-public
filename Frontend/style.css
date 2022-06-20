@@ -35,6 +35,11 @@
     margin: 0px 45px 5px 45px;
 }
 
+#aws_techs {
+    font-size: .9em;
+    padding-top: 5px
+}
+
 #millist {
     margin: auto 65px auto auto;
 }
